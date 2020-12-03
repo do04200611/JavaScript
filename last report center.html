@@ -49,50 +49,17 @@
     <script text="javascript">
 
         $(document).ready(function(){
-          $("#zero").click(function(){
-            $("#test").val("0",onclick);
           });
-          $("#one").click(function(){
-            $("#test").val("1",onclick);
-          });
-          $("#two").click(function(){
-            $("#test").val("2");
-          });
-          $("#three").click(function(){
-            $("#test").val("3");
-          });
-          $("#four").click(function(){
-            $("#test").val("4");
-          });
-          $("#five").click(function(){
-            $("#test").val("5");
-          });
-          $("#six").click(function(){
-              $("#test").val("6");
-            });
-            $("#seven").click(function(){
-              $("#test").val("754");
-            });
-            $("#eight").click(function(){
-              $("#test").val("8");
-            });
-            $("#nine").click(function(){
-              $("#test").val("9");
-            });
-            $("#clear").click(function(){
-              $("#test").val("");
-            });
-              $("#total").val("51,000");
-            });
-            $("#add").click(function(){
-              $("#test").val("저장되었습니다");
-            });
+          $("#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine").click(function(){
+    if($("#test").val() == "Tel") $("#test").val("");
+    $("#test").val($("#test").val()+$(this).text());
+});
 
         });
         function inputPhoneNumber(obj) {
 
 
-  let tmp = '';
+
             let number = obj.value.replace(/[^0-9]/g, "");
             let phone = "";
 
