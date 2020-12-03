@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #zero{
+      margin-right: -4px;
+      } #one{
+      margin-left: -3px;
+      } #two{
+      margin-right: -4px;
+      } #three{
+        margin-left: : -3px;
+        } #four{
+        margin-right: -4px;
+        }#five{
+        margin-left: -3px;
+        } #six{
+        margin-right: -4px;
+        } #seven{
+        margin-left: : -3px;
+        }#eight{
+        margin-right: -4px;
+        }#nine{
+        margin-left: : -3px;
+        }#clear{
+        margin-right: -4px;
+        }#add{
+        margin-left: : -3px;
+        }#button_style button{
+          border : 1px solid green;
+background-color: rgba(255, 0, 0, 0.5);
+color: green;
+padding: 5px;
+        }#button_style button:hover{
+          color: white;
+          background-color: purple;
+        }
+    </style>
+    <script text="javascript">
+
+        $(document).ready(function(){
+          $("#zero").click(function(){
+            $("#test").val("0");
+          });
+          $("#one").click(function(){
+            $("#test").val("1");
+          });
+          $("#two").click(function(){
+            $("#test").val("2");
+          });
+          $("#three").click(function(){
+            $("#test").val("3");
+          });
+          $("#four").click(function(){
+            $("#test").val("4");
+          });
+          $("#five").click(function(){
+            $("#test").val("5");
+          });
+          $("#six").click(function(){
+              $("#test").val("6");
+            });
+            $("#seven").click(function(){
+              $("#test").val("7");
+            });
+            $("#eight").click(function(){
+              $("#test").val("8");
+            });
+            $("#nine").click(function(){
+              $("#test").val("9");
+            });
+            $("#clear").click(function(){
+              $("#test").val("");
+            });
+            $("#save").click(function(){
+              $("#total").val("51,000");
+            });
+            $("#add").click(function(){
+              $("#test").val("저장되었습니다");
+            });
+
+        });
+        function inputPhoneNumber(obj) {
+
+
+  let tmp = '';
+            let number = obj.value.replace(/[^0-9]/g, "");
+            let phone = "";
+
+
+
+            if(number.length < 4) {
+                return number;
+            } else if(number.length < 7) {
+                phone += number.substr(0, 3);
+                phone += "-";
+                phone += number.substr(3);
+            } else if(number.length < 11) {
+                phone += number.substr(0, 3);
+                phone += "-";
+                phone += number.substr(3, 3);
+                phone += "-";
+                phone += number.substr(6);
+            } else {
+                phone += number.substr(0, 3);
+                phone += "-";
+                phone += number.substr(3, 4);
+                phone += "-";
+                phone += number.substr(7);
+            }
+            obj.value = phone;
+        }
+        //c출처 :http://magic.wickedmiso.com/61
+        </script>
+  </head>
+  <body>
+<div id="button_style">
+<p>금액 <input type="text" id="total" value="total">
+    <button id="save">check</button></p> </div>
+
+
+  <p>전화 번호 <input type="text"
+     id="test" value="Tel"  onkeypress="inputPhoneNumber(this);"></p>
+  <div id="button_style">
+  <p> <button id="zero" >0</button>
+   <button id="one" >1</button>
+    <button id="two">2</button>
+  <button id="three">3</button></p>
+
+
+<p><button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+              <button id="seven">7</button></p>
+
+
+
+        <p> <button id="eight">8</button>
+               <button id="nine">9</button>
+              <button id="clear"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8vF32g9BFimu94cajAwVY6yWC9MrG6NDTQ&usqp=CAU"
+                width="50", height="50"></button>
+
+                              <button id="add"><img src="https://en.pimg.jp/034/326/317/1/34326317.jpg" ,width="50", height="50"></button></p>
+</div>
+  </body>
+</html>
