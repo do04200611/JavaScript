@@ -52,6 +52,16 @@
           $("#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine").click(function(){
     if($("#test").val() == "Tel") $("#test").val("");
     $("#test").val($("#test").val()+$(this).text());
+    $("#clear").click(function(){
+             $("#test").val("");
+           });
+           $("#save").click(function(){
+             $("#total").val("51,000");
+           });
+           $("#add").click(function(){
+             $("#test").val("저장되었습니다");
+           });
+
 });
 
         });
