@@ -1,0 +1,4 @@
+참고한 사이트 주소 난수 부분에서 활용
+https://m.blog.naver.com/PostView.nhn?blogId=hsoojy_&logNo=220828611308&proxyReferer=https:%2F%2Fwww.google.com%2F
+
+Math.floor(Math.random()*100)+1
