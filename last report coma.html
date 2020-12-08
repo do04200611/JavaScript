@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+     #button_style button{
+          width: 150px;
+          height: 150px;
+          border : 1px solid green;
+          background-color: orange;
+          color: green;
+          padding: 5px;
+         text-align: center;
+         border-radius: 30px;
+        }#button_style button:hover{
+          color: white;
+          background-color: purple;
+        }
+        body{
+          text-align: center;
+          background-color: skyblue;
+        }#titlename{
+            font-size:100px;
+            color: yellow;
+          }
+
+    </style>
+    <script text="javascript">
+
+        $(document).ready(function(){
+
+          $("#save").click(function(num){
+            $("#total").val((Math.floor(Math.random()*100000)+1)
+            .toLocaleString("ko-KR", { style: 'currency', currency: 'KRW' }));
+          });
+          $("#zero, #one, #two, #three, #four, #five, #six, #seven, #eight,#nine,#zeroone").click(function(){
+    if($("#test").val() == "Tel") $("#test").val("");
+    $("#test").val($("#test").val()+$(this).text());
+
+             $("#clear").click(function(){
+             $("#test").val("");
+           });
+           $("#add").click(function(){
+             $("#test").val("저장되었습니다");
+           });
+           $("#delete").click(function(){
+             let str = $("#test").val().substring(1, $("#test").val().length-1);
+         $("#test").val(str);
+           });
+
+});
+        });
+        //c출처 :http://magic.wickedmiso.com/61
+        </script>
+  </head>
+  <body>
+    <div id="titlename">마일리지 등록기</div>
+<p>금액 <input type="text" id="total" value="total" onkeyup="inputNumberFormat(this)"></p>
+
+  <p>전화 번호 <input type="tel"
+     id="test" value="Tel"  ondblclick="inputPhoneNumber(this);"></p>
+  <div id="button_style">
+  <p> <button id="zero" >0</button><button id="one" >1</button><button id="two">2</button><button id="three">3</button></p>
+
+<p><button id="four">4</button><button id="five">5</button><button id="six">6</button><button id="seven">7</button></p>
+
+        <p><button id="eight">8</button><button id="nine">9</button><button id="clear">C</button><button id="add">등록</button></p>
+<p> <button id="save">금액 확인</button><button id="delete">X</button><button id="zeroone">051-</button></p>
+</div>
+  </body>
+</html>
