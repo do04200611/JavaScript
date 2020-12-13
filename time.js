@@ -4,7 +4,7 @@ $(document).ready(function(){
        $("#total").val((Math.floor(Math.random()*100000)+1)
        .toLocaleString("ko-KR", { style: 'currency', currency: 'KRW' }));
      });
-     $("#zero, #one, #two, #three, #four, #five, #six, #seven, #eight,#nine,#zeroone").click(function(){
+     $(".btnNum").click(function(){
 if($("#test").val() == "Tel") $("#test").val("");
 $("#test").val($("#test").val()+$(this).text());
 
