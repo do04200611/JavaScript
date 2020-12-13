@@ -1,0 +1,32 @@
+ #button_style button{
+      width: 150px;
+      height: 50px;
+      border : 1px solid green;
+      background-color: orange;
+      color: green;
+      padding: 5px;
+     text-align: center;
+     border-radius: 30px;
+    }#button_style button:hover{
+      color: white;
+      background-color: purple;
+    }
+    body{
+      text-align: center;
+      background-color: skyblue;
+
+    }#titlename{
+        font-size:50px;
+        color: yellow;
+      }#test {
+        background-color:chartreuse;
+        font-size: 20px;
+        color : gold;
+      }#total{
+        background-color:indianred;
+        font-size: 20px;
+      }input::-webkit-input-placeholder { color: powderblue; }
+      #now{
+        font-size: 30px;
+        color: orange;
+      }
