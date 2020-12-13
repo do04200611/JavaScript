@@ -15,7 +15,7 @@ $("#test").val($("#test").val()+$(this).text());
         var copyText = document.getElementById("test");
             copyText.select();
             document.execCommand("copy");
-            alert( copyText.value+"은 저장되었습니다~^^");
+            alert("전화 번호 "+ copyText.value+"번은 저장되었습니다~^^");
       });
       $("#delete").click(function(){
         let str = $("#test").val().substring(1, $("#test").val().length-1);
