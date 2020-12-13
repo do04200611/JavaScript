@@ -9,3 +9,6 @@ input::-webkit-input-placeholder { color: #f00; }
 
 현재 시간을 나타내기 코드
 http://www.devkuma.com/codes/51
+
+alert 띄우기 창
+http://www.devkuma.com/codes/44
