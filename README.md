@@ -29,6 +29,6 @@ alert.js와 time.css, alert.html 파일 저의 과제 제출 파일 입니다.<b
   |<a href="https://www.canva.com/design/DAFzY5opUiA/Ge33dSKE16cErBaDJDp-BA/edit"><img src="https://img.shields.io/badge/canva-purple?style=for-the-badge&logo=canva" alt="canva"></a>| 11月|<img src="https://img.shields.io/badge/canva-purple?style=for-the-badge&logo=canva" alt="canva">バージョン|
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=egg&color=gradient&height=100&text=Thank%20you%20for%20watching.&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=egg&color=gradient&height=250&text=Thank%20you%20for%20watching.&section=footer" />
 
 
